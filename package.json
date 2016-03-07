@@ -6,12 +6,9 @@
   "scripts": {
     "gulp": "gulp --require coffee-script/register",
     "i": "npm i --no-optional",
-    "start": "npm run i && mocha -w",
+    "test": "npm run i && mocha -w",
     "once": "npm run i && mocha",
-    "test": "mocha",
-    "pretest": "npm run i",
-    "tdd": "npm run gulp tdd",
-    "pretdd": "npm run i"
+    "start": "npm run i && (npm run gulp tdd & ws)"
   },
   "local-web-server": {
     "directory": "dist/",
@@ -21,7 +18,7 @@
       "*.ts",
       "*.md",
       "*.yml",
-      "*.babel.js",
+      "*.coffee",
       ".gitignore"
     ],
     "no-cache": true
@@ -54,5 +51,8 @@
     "gulp-open": "^1.0.0",
     "local-web-server": "^1.1.2",
     "mocha": "^2.3.4"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.0"
   }
 }
