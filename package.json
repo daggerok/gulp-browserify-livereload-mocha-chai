@@ -1,5 +1,5 @@
 {
-  "name": "livereload-mocha-chai-growserify",
+  "name": "gulp-browserify-livereload-mocha-chai",
   "version": "1.0.0",
   "description": "livereload testing using: mocha, chai, gulp-coffee, gulp-browserify, gulp-livereload, local-web-server",
   "main": "dist/tests.js",
